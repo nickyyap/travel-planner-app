@@ -27,6 +27,7 @@ export default function NavBar() {
                         {token && <Nav.Link as={NavLink} to="/planfuturetrip" style={{ color: "white" }}>Plan Future Trip</Nav.Link>}
                         {token && <Nav.Link as={NavLink} to="/traveldocument" style={{ color: "white" }}>Documents</Nav.Link>}
                         {token && <Nav.Link as={NavLink} to="/bucketlist" style={{ color: "white" }}>Bucket List</Nav.Link>}
+                        {token && <Nav.Link as={NavLink} to="/currencyconverter" style={{ color: "white" }}>Currency Converter</Nav.Link>}
                     </Nav>
                     {token && (<Button variant="danger" onClick={logout}>Logout</Button>)}
                 </Navbar.Collapse>

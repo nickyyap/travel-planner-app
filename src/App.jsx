@@ -15,6 +15,7 @@ import PlanFutureTrip from './pages/PlanFutureTrip';
 import EditPlanFutureTrip from './pages/EditPlanFutureTrip';
 import TravelDocument from './pages/TravelDocument';
 import BucketList from './pages/BucketList';
+import CurrencyConverter from './pages/CurrencyConverter';
 
 function App() {
   const [token, setToken] = useLocalStorage("token", null);
@@ -61,6 +62,10 @@ function App() {
                 <RequireAuth>
                   <BucketList />
                 </RequireAuth>} path="/bucketlist" />
+              <Route element={
+                <RequireAuth>
+                  <CurrencyConverter />
+                </RequireAuth>} path="/currencyconverter" />
             </Routes>
           </BrowserRouter>
         </PlanContext.Provider>
