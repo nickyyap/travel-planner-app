@@ -36,7 +36,7 @@ export default function PackingList() {
 
     return (
         <Container>
-            <h1 className="my-3">Add Packing List</h1>
+            <h1 className="my-5">Add Packing List</h1>
             <Form onSubmit={addToPack}>
                 <Form.Group controlId="title" className="mb-3">
                     <Form.Label>Title</Form.Label>
@@ -72,7 +72,7 @@ export default function PackingList() {
                     ))}
                 </ListGroup>
 
-                <Button variant="primary" type="submit">Add</Button>
+                <Button variant="dark" type="submit">Add</Button>
             </Form>
         </Container>
     )

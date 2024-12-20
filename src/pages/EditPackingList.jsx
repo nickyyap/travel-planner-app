@@ -89,7 +89,7 @@ export default function EditPackingList() {
                     ))}
                 </ListGroup>
 
-                <Button variant="primary" type="submit">Save Change</Button>
+                <Button variant="success" type="submit">Save</Button>
             </Form>
         </Container>
     )

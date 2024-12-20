@@ -33,7 +33,7 @@ export default function BucketList() {
     };
     return (
         <Container className="my-5">
-            <h1 className="mb-4">My Bucket List</h1>
+            <h1 className="my-4">My Bucket List</h1>
             <Form onSubmit={addBucketList}>
                 <Form.Group controlId="place" className="mb-3">
                     <Form.Label>Place to Visit</Form.Label>
@@ -44,7 +44,7 @@ export default function BucketList() {
                         onChange={(e) => setPlace(e.target.value)}
                         required />
                 </Form.Group>
-                <Button variant="primary" type="submit">Add to Bucket List</Button>
+                <Button variant="dark" type="submit">Add to Bucket List</Button>
             </Form>
             <div className="border p-3 rounded my-5 custom-border">
                 <h2 className="my-4 text-center">Place to Visit</h2>

@@ -31,7 +31,7 @@ export default function PlanFutureTrip() {
     }
     return (
         <Container>
-            <h1 className="my-3">Plan Your Upcoming Trip!</h1>
+            <h1 className="my-5">Plan Your Upcoming Trip!</h1>
             <Form onSubmit={planTrip}>
                 <Form.Group controlId="destination" className="mb-3">
                     <Form.Label>Place to Vacation</Form.Label>
@@ -84,7 +84,7 @@ export default function PlanFutureTrip() {
                         onChange={(e) => setTripPlan(e.target.value)}
                         required />
                 </Form.Group>
-                <Button variant="primary" type="submit">Plan</Button>
+                <Button variant="dark" type="submit">Plan</Button>
 
             </Form>
         </Container>

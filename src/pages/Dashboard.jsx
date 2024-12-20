@@ -44,9 +44,9 @@ export default function Dashboard() {
                 ) : (
                     toPack.map((item) => (
                         <Col key={item.id} md={6}>
-                            <Card className="shadow-sm border-light rounded h-100">
+                            <Card className="shadow border-light rounded h-100">
                                 <Card.Body>
-                                    <Card.Title className="text-secondary fs-4 text-uppercase">{item.title}
+                                    <Card.Title className="text-secondary fs-4 text-uppercase" style={{ fontWeight: "bold" }}>{item.title}
                                         <Button
                                             variant="danger ms-3"
                                             size="sm"

@@ -36,7 +36,7 @@ export default function TravelDocument() {
 
     return (
         <Container>
-            <h1 className="my-3">Upload Travel Documents</h1>
+            <h1 className="my-5">Upload Travel Documents</h1>
             <Form onSubmit={handleUploadDocument}>
                 <Form.Group controlId="documentName" className="mb-3">
                     <Form.Label>Document Name</Form.Label>
@@ -54,36 +54,36 @@ export default function TravelDocument() {
                         onChange={handleFileChange}
                         required />
                 </Form.Group>
-                <Button variant="primary" type="submit">Upload Document</Button>
+                <Button variant="dark" type="submit">Upload Document</Button>
             </Form>
-            <div className="border p-3 rounded my-5 custom-border-doc">
-            <h2 className="my-4 text-center">Travel Documents</h2>
-            <ListGroup>
-                {documents.length === 0 ? (
-                    <p>No documents uploaded yet</p>
-                ) : (
-                    documents.map((document) => (
-                        <ListGroup.Item key={document.id}>
-                            <Card>
-                                <Card.Body>
-                                    <Card.Title>{document.name}<Button
+            <div className="border p-3 rounded my-5 custom-border-doc custom-border">
+                <h2 className="my-3 text-center">Travel Documents</h2>
+                <ListGroup>
+                    {documents.length === 0 ? (
+                        <p>No documents uploaded yet</p>
+                    ) : (
+                        documents.map((document) => (
+                            <ListGroup.Item key={document.id}>
+                                <Card>
+                                    <Card.Body>
+                                        <Card.Title>{document.name}<Button
                                             variant="danger"
                                             size="sm"
                                             className="float-end my-3"
                                             onClick={() => deleteDocument(document.id)}>
                                             <i className="bi bi-trash3"></i>
                                         </Button></Card.Title>
-                                    <Card.Text>
-                                        <a href={document.file} target="_blank" rel="noopener noreferrer">
-                                            View Document
-                                        </a>
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </ListGroup.Item>
-                    ))
-                )}
-            </ListGroup>
+                                        <Card.Text>
+                                            <a href={document.file} target="_blank" rel="noopener noreferrer">
+                                                View Document
+                                            </a>
+                                        </Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            </ListGroup.Item>
+                        ))
+                    )}
+                </ListGroup>
             </div>
         </Container>
     )

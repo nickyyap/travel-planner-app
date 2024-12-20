@@ -39,7 +39,7 @@ export default function Home() {
                                             </>
                                         ) : ("No start date available")}
                                     </p>
-                                    <Card.Title className="fs-4 text-uppercase custom-color text-center text-secondary">{trip.destination}</Card.Title>
+                                    <Card.Title className="fs-3 text-uppercase custom-color text-center text-secondary" style={{ fontWeight: "bold" }}>{trip.destination}</Card.Title>
                                     <Card.Text>
                                         <span><b className="me-2">From </b> {trip.startDate}<b className="me-2 ms-2"> To </b> {trip.endDate}</span><br /><br />
                                         <b className="mb-2">Transport: </b> {trip.transport} <br /><br />

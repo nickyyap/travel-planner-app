@@ -17,7 +17,7 @@ export default function NavBar() {
     return (
         <Navbar bg="dark" expand="lg">
             <Container>
-                <Navbar.Brand as={NavLink} to="/" style={{ color: "white" }}>Travel Planner</Navbar.Brand>
+                <Navbar.Brand as={NavLink} to="/" style={{ color: "white" }}><b>Travel Planner</b></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="nasic-navbar-nav">
                     <Nav className="me-auto">
